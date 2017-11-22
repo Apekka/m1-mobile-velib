@@ -1,0 +1,9 @@
+{
+  "commitish" : "5.0.0",
+  "iOS" : [
+    {
+      "name" : "AlamofireObjectMapper",
+      "hash" : "765e15dca72b6198c5533271c1b46cf789bd4367b65032e7af78fc65a86d4e82"
+    }
+  ]
+}

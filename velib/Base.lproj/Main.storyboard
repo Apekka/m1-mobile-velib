@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4TM-iW-7mE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bike List Controller-->
+        <scene sceneID="EBl-Xx-BOQ">
+            <objects>
+                <tableViewController id="ePs-Xs-WTq" customClass="BikeListController" customModule="velib" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GSq-zz-TTS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ePs-Xs-WTq" id="S9b-vw-tRU"/>
+                            <outlet property="delegate" destination="ePs-Xs-WTq" id="skY-mr-BOL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WpZ-kn-UUl"/>
+                    <connections>
+                        <segue destination="VC2-Xy-aLH" kind="show" identifier="detailStationSegue" id="fc7-9G-Nph"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIg-en-lbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="152"/>
+        </scene>
+        <!--Details Controller-->
+        <scene sceneID="2Sy-rM-TjT">
+            <objects>
+                <viewController id="VC2-Xy-aLH" customClass="DetailsController" customModule="velib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rJ9-n6-Nwc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="z5p-ck-Vps">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z5p-ck-Vps" firstAttribute="trailing" secondItem="Qk7-Wq-TtI" secondAttribute="trailing" id="dBF-wg-Ubd"/>
+                            <constraint firstItem="z5p-ck-Vps" firstAttribute="bottom" secondItem="Qk7-Wq-TtI" secondAttribute="bottom" id="eHg-yv-Bdl"/>
+                            <constraint firstItem="z5p-ck-Vps" firstAttribute="top" secondItem="Qk7-Wq-TtI" secondAttribute="top" id="g6u-1K-2dO"/>
+                            <constraint firstItem="z5p-ck-Vps" firstAttribute="leading" secondItem="Qk7-Wq-TtI" secondAttribute="leading" id="sA4-rb-dld"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qk7-Wq-TtI"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="z5p-ck-Vps" id="jGR-1X-Gbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FUi-W5-i73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184.8" y="151.57421289355324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NUH-9Y-DPA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4TM-iW-7mE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="80p-Nk-dd4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ePs-Xs-WTq" kind="relationship" relationship="rootViewController" id="VUT-I3-wL0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLN-re-h6y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="152"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA68E3F11FC57651006028B8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = BA68E3F01FC57651006028B8 /* Cartfile */; };
+		BA68E3F31FC57718006028B8 /* StationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68E3F21FC57718006028B8 /* StationManager.swift */; };
+		BA68E3F71FC577B9006028B8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA68E3F51FC577B9006028B8 /* Alamofire.framework */; };
+		BA68E3FB1FC58AE7006028B8 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA68E3FA1FC58AE7006028B8 /* ObjectMapper.framework */; };
+		BA68E3FD1FC58E91006028B8 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA68E3FC1FC58E91006028B8 /* AlamofireObjectMapper.framework */; };
+		BAF2CEFD1FA752A50044576E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2CEFC1FA752A50044576E /* AppDelegate.swift */; };
+		BAF2CF021FA752A50044576E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF2CF001FA752A50044576E /* Main.storyboard */; };
+		BAF2CF041FA752A50044576E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF2CF031FA752A50044576E /* Assets.xcassets */; };
+		BAF2CF071FA752A50044576E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF2CF051FA752A50044576E /* LaunchScreen.storyboard */; };
+		BAF2CF101FA754360044576E /* BikeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2CF0F1FA754360044576E /* BikeListController.swift */; };
+		BAF2CF131FA758B80044576E /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2CF121FA758B80044576E /* Station.swift */; };
+		BAF2CF171FA762430044576E /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2CF151FA762430044576E /* StationCell.swift */; };
+		BAF2CF181FA762430044576E /* StationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF2CF161FA762430044576E /* StationCell.xib */; };
+		BAF2CF1B1FA7768C0044576E /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF2CF1A1FA7768C0044576E /* DetailsController.swift */; };
+		BAF2CF1D1FA78DA80044576E /* assets in Resources */ = {isa = PBXBuildFile; fileRef = BAF2CF1C1FA78DA70044576E /* assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA68E3F01FC57651006028B8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		BA68E3F21FC57718006028B8 /* StationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationManager.swift; sourceTree = "<group>"; };
+		BA68E3F51FC577B9006028B8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		BA68E3FA1FC58AE7006028B8 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		BA68E3FC1FC58E91006028B8 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		BAF2CEF91FA752A50044576E /* velib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = velib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF2CEFC1FA752A50044576E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAF2CF011FA752A50044576E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF2CF031FA752A50044576E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF2CF061FA752A50044576E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAF2CF081FA752A50044576E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF2CF0F1FA754360044576E /* BikeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeListController.swift; sourceTree = "<group>"; };
+		BAF2CF121FA758B80044576E /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		BAF2CF151FA762430044576E /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		BAF2CF161FA762430044576E /* StationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationCell.xib; sourceTree = "<group>"; };
+		BAF2CF1A1FA7768C0044576E /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		BAF2CF1C1FA78DA70044576E /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF2CEF61FA752A50044576E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68E3FB1FC58AE7006028B8 /* ObjectMapper.framework in Frameworks */,
+				BA68E3FD1FC58E91006028B8 /* AlamofireObjectMapper.framework in Frameworks */,
+				BA68E3F71FC577B9006028B8 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA68E3F41FC57797006028B8 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA68E3FC1FC58E91006028B8 /* AlamofireObjectMapper.framework */,
+				BA68E3FA1FC58AE7006028B8 /* ObjectMapper.framework */,
+				BA68E3F51FC577B9006028B8 /* Alamofire.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		BAF2CEF01FA752A50044576E = {
+			isa = PBXGroup;
+			children = (
+				BA68E3F01FC57651006028B8 /* Cartfile */,
+				BAF2CEFB1FA752A50044576E /* velib */,
+				BAF2CEFA1FA752A50044576E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF2CEFA1FA752A50044576E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2CEF91FA752A50044576E /* velib.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF2CEFB1FA752A50044576E /* velib */ = {
+			isa = PBXGroup;
+			children = (
+				BA68E3F41FC57797006028B8 /* frameworks */,
+				BAF2CF1C1FA78DA70044576E /* assets */,
+				BAF2CF141FA761E30044576E /* views */,
+				BAF2CF111FA7588A0044576E /* models */,
+				BAF2CF0E1FA7533A0044576E /* controllers */,
+				BAF2CEFC1FA752A50044576E /* AppDelegate.swift */,
+				BAF2CF001FA752A50044576E /* Main.storyboard */,
+				BAF2CF031FA752A50044576E /* Assets.xcassets */,
+				BAF2CF051FA752A50044576E /* LaunchScreen.storyboard */,
+				BAF2CF081FA752A50044576E /* Info.plist */,
+			);
+			path = velib;
+			sourceTree = "<group>";
+		};
+		BAF2CF0E1FA7533A0044576E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2CF0F1FA754360044576E /* BikeListController.swift */,
+				BAF2CF1A1FA7768C0044576E /* DetailsController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		BAF2CF111FA7588A0044576E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2CF121FA758B80044576E /* Station.swift */,
+				BA68E3F21FC57718006028B8 /* StationManager.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		BAF2CF141FA761E30044576E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2CF191FA762550044576E /* StationCell */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		BAF2CF191FA762550044576E /* StationCell */ = {
+			isa = PBXGroup;
+			children = (
+				BAF2CF151FA762430044576E /* StationCell.swift */,
+				BAF2CF161FA762430044576E /* StationCell.xib */,
+			);
+			path = StationCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF2CEF81FA752A50044576E /* velib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF2CF0B1FA752A50044576E /* Build configuration list for PBXNativeTarget "velib" */;
+			buildPhases = (
+				BAF2CEF51FA752A50044576E /* Sources */,
+				BAF2CEF61FA752A50044576E /* Frameworks */,
+				BAF2CEF71FA752A50044576E /* Resources */,
+				BA68E3F91FC5781B006028B8 /* Copy Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = velib;
+			productName = velib;
+			productReference = BAF2CEF91FA752A50044576E /* velib.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF2CEF11FA752A50044576E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Clément SAUVAGE";
+				TargetAttributes = {
+					BAF2CEF81FA752A50044576E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BAF2CEF41FA752A50044576E /* Build configuration list for PBXProject "velib" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF2CEF01FA752A50044576E;
+			productRefGroup = BAF2CEFA1FA752A50044576E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF2CEF81FA752A50044576E /* velib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF2CEF71FA752A50044576E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA68E3F11FC57651006028B8 /* Cartfile in Resources */,
+				BAF2CF1D1FA78DA80044576E /* assets in Resources */,
+				BAF2CF071FA752A50044576E /* LaunchScreen.storyboard in Resources */,
+				BAF2CF041FA752A50044576E /* Assets.xcassets in Resources */,
+				BAF2CF181FA762430044576E /* StationCell.xib in Resources */,
+				BAF2CF021FA752A50044576E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA68E3F91FC5781B006028B8 /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+			);
+			name = "Copy Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF2CEF51FA752A50044576E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF2CF101FA754360044576E /* BikeListController.swift in Sources */,
+				BAF2CEFD1FA752A50044576E /* AppDelegate.swift in Sources */,
+				BA68E3F31FC57718006028B8 /* StationManager.swift in Sources */,
+				BAF2CF1B1FA7768C0044576E /* DetailsController.swift in Sources */,
+				BAF2CF171FA762430044576E /* StationCell.swift in Sources */,
+				BAF2CF131FA758B80044576E /* Station.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAF2CF001FA752A50044576E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF2CF011FA752A50044576E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF2CF051FA752A50044576E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF2CF061FA752A50044576E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF2CF091FA752A50044576E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAF2CF0A1FA752A50044576E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF2CF0C1FA752A50044576E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VL2CGS2924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = velib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.clementsauvage.velib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF2CF0D1FA752A50044576E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VL2CGS2924;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = velib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.clementsauvage.velib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF2CEF41FA752A50044576E /* Build configuration list for PBXProject "velib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF2CF091FA752A50044576E /* Debug */,
+				BAF2CF0A1FA752A50044576E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF2CF0B1FA752A50044576E /* Build configuration list for PBXNativeTarget "velib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF2CF0C1FA752A50044576E /* Debug */,
+				BAF2CF0D1FA752A50044576E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF2CEF11FA752A50044576E /* Project object */;
+}

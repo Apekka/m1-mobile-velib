@@ -1,0 +1,9 @@
+{
+  "commitish" : "7.3.0",
+  "iOS" : [
+    {
+      "name" : "Mapper",
+      "hash" : "8ef550ccfa0224eb24891f19720b80bd6cd0d7fbcefb69fe92aa86018686e453"
+    }
+  ]
+}
